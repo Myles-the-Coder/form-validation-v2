@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgray;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.container label {
+  font-size: 1.4rem;
+}
+
+.container input {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  background-color: lightgray;
+  opacity: 0.8;
+  width: 60%;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.message-container {
+  border: 1px solid red;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.message-container h3 {
+  margin-bottom: 1rem;
+}
+
+.message,
+.submessage {
+  color: red;
+}
